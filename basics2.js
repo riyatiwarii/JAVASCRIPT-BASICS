@@ -26,7 +26,7 @@
 //  select HTML elements. In jQuery $("p"); means "select all p elements".
 
 //  Block Scope
-//  JavaScript keywords: let and const provide Block Scope in JavaScript.Variables
+//  JavaScript keywords: let and const provide Block Scope in JavaScript. Variables
 //  declared inside a { } block cannot be accessed from outside the block:
     {
         let x = 2;
