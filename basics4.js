@@ -58,12 +58,32 @@
 //  Meaning: Using a const variable before it is declared will result in a
 //  referenceError.
 
-var x = 10;
- 
-function test()
-{
-    var x = 20;
-    console.log(x);
-}
- 
-test();
+    var x = 10;
+    
+    function test()
+    {
+        var x = 20;
+        console.log(x);
+    }
+    
+    test();
+
+    // alert (carName);
+    // const carName = "Volvo"; // reference error
+
+//  Note: There’s a difference between ReferenceError and undefined error.
+//  An undefined error occurs when we have a variable that is either not defined
+//  or explicitly defined as type undefined. ReferenceError is thrown when trying
+//  to access a previously undeclared variable.
+//  However, in below case of var, the interpretor sees it differently. 
+
+    console.log(testingerror);      // Here it will show the error undefined instead of
+    var testingerror = "Checking."  // reference.
+                                      
+
+    var testingerror = "Checking."  // In order to avoid this pitfall, we can make sure
+    console.log(testingerror);      // to declare and assign the variable at the same time,
+                                    // before using it. 
+    
+    
+     
