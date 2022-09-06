@@ -16,6 +16,8 @@
 //  SyntaxError: 'bikeName' has already been declared
 //  It will result that "Cannot redeclare block-scoped variable 'bikeName'."
 
+//  Local Scope: Block Scope & Functional Scope
+
 //  Block Scope
 //  let and const are block scoped.
 
@@ -46,3 +48,14 @@
     console.log(first);
     // Here first is 2.
 
+//  Function Scope
+
+    function playlist(){
+        var song = "Boulevard of Broken Dreams"
+        console.log(song);
+    }
+    playlist();
+    console.log(song);
+
+// When you declare a variable in a function, that variable is only visible
+// within the function.
