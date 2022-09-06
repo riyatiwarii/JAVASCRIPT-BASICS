@@ -78,8 +78,7 @@
 //  However, in below case of var, the interpretor sees it differently. 
 
     console.log(testingerror);      // Here it will show the error undefined instead of
-    var testingerror = "Checking."  // reference.
-                                      
+    var testingerror = "Checking."  // reference.                                    
 
     var testingerror = "Checking."  // In order to avoid this pitfall, we can make sure
     console.log(testingerror);      // to declare and assign the variable at the same time,

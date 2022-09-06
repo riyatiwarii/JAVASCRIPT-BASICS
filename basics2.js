@@ -59,3 +59,27 @@
 
 // When you declare a variable in a function, that variable is only visible
 // within the function.
+
+// Global Scope
+
+// The global scope is the outermost scope and the variables can be accessed from
+// any inner(Local) scope.
+    
+var fruitname = "Litchi"
+function fruits(){
+ console.log(fruitname + " is a summer fruit.")
+}
+fruits()
+
+// Lexical Scope
+// When a function is defined inside another function, the inner function can access
+// the variables of the outer function. This operation is called Lexical scoping.
+
+function sendMessage(){
+     var msg = "Hello World";
+     function callMessage(){
+         console.log(msg);
+     } 
+     callMessage();      
+}
+sendMessage()
