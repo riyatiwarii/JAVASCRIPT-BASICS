@@ -15,3 +15,14 @@ while (i < 16){
 }
 console.log("--")
 console.log(i)
+
+// Do While loop
+
+// This type of loop will always be executed at least once, even if the expression is false,
+// because the code block is executed before the expression is evaluated.
+
+// let number = 1
+// do {
+//     console.log(`The number is ${number}.`)
+// }
+// while (number < 6)
