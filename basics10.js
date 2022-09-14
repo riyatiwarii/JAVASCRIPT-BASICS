@@ -6,6 +6,12 @@ for( var i = 0 ; i < 10 ; i++ ){
 console.log("--")
 console.log(i) // "Using let will throw a reference error because it is block-scoped. :)"
 
+num = [1, 2, 3, 4, 5]
+num.forEach(element => {
+    console.log(element*element)
+});
+
+
 // While loop
 
 var i = 1;
