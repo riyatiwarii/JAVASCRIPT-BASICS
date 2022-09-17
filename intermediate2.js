@@ -12,7 +12,7 @@
     // create an object
     // console.log(myProfile("Riya","riya@yahoo.com", 2))
 
-    // Constructor function //Note: A good practice to use uppercase in constructor creation.
+//  Constructor function //Note: A good practice to use uppercase in constructor creation.
     function MyProfile (myFirstName, myEmailId, myRepositories){
         this.myFirstName = myFirstName;
         this.myEmailId = myEmailId;

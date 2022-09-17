@@ -48,3 +48,7 @@ myProfile.getCount()//it doesn't get counted as regular function call but an obj
 
 //  When you pass this with the call() function, greet() is treated as the method of this object
 //  (global object in this case).
+
+//  Notice that I could have mentioned and tried examples with Arrow function as well.
+//  Since, arrow functions don't have a this value of their own, we use regular function.
+//  Later on, we will come across constructors as well.
