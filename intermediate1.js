@@ -1,9 +1,11 @@
-// Javascript and jquery (by Jon duckett).
-// THIS keyword. :D It is easy, follow me below :D.
-// For all regular function calls, THIS points to window object.
+//  Javascript and jquery (by Jon duckett).
+//  the THIS keyword refers to the object where it is called. 
+//  To be more specific, it’s meant to help you target the current object.
+//  For all regular function calls, THIS points to window object.
 
-   console.log(this)
-// This code execution gets me to the global object which is window object in this case.
+//  What happens if you reference this in the global context (i.e., not inside any function)?
+    console.log(this)
+//  This code execution gets me to the global object which is window object in this case.
 
     var myProfile = {
         myName : "Riya",
@@ -20,5 +22,29 @@
     }
 myProfile.getCount()//it doesn't get counted as regular function call but an object call.
 
-// So, always take a note:
-// For all regular function calls, THIS points to window object.
+//  So, always take a note:
+//  For all regular function calls, THIS points to window object.
+
+//  this Inside Function with Strict Modet
+
+    'use strict';
+    this.name = 'Riya';
+    function greet() {
+
+        // this refers to undefined
+        console.log(this);
+    }
+    greet(); // undefined
+//  When this is used in a function with strict mode, this is undefined.
+
+    'use strict';
+    this.name = 'Riya';
+    function greet() {
+
+        // this refers to undefined
+        console.log(this.name);
+    }
+    greet.call(this); // undefined
+
+//  When you pass this with the call() function, greet() is treated as the method of this object
+//  (global object in this case).
