@@ -27,7 +27,7 @@
     //console.log(numberlist.every(numIsEven)); //False
     
     console.log(numberlist.map(ele => ele%2 === 0)) //[true, false, true, false, true]
-//  Difference but was missing this Map function :P.
+//  Different but was missing this Map function :P.
 
 //  Callback
     console.log(numberlist.every((elem) => elem%2 === 0)); //False
@@ -50,16 +50,11 @@
         debtCollector : ["Svea"],
         invoiceVendor : [],
         payCollection : ["invoice1","invoice2","invoice3","invoice4","invoice5"],
-        invoicesPaid  : function(canBeClosed) {
-            this.invoicesPaid.push(canBeClosed);
-        },
         priorityCollection : function(){
             return `${this.debtCollector} has ${this.payCollection.length} original invoices payment.`
         }
     };
-    var invoicesPaid = true
     console.log(collectionCase.debtCollector) //['Svea']
     console.log(collectionCase["numberOfCases"]) //50
     console.table(collectionCase) 
-    console.log(collectionCase.priorityCollection()) 
     console.log(collectionCase.priorityCollection()) 

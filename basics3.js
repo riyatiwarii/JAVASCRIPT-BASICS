@@ -1,4 +1,4 @@
-// Special Cases Where JavaScript Scope Behave Differently.
+// Special Cases Where JavaScript Scope Behaves Differently.
 
 // 1. Declaring variables using ‘var' inside a for-loop
    const subjects = ['maths','science','english','hindi','computer']

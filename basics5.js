@@ -1,4 +1,4 @@
-var passScore = 20
+let passScore = 20
 let myScore = 19
 let joy = "Woah!";
 if (myScore > 18){
@@ -7,7 +7,7 @@ if (myScore > 18){
     console.log(joy)
 }
 console.log(passScore)
-console.log(myScore) //let block scoped undefined error
+console.log(myScore) 
 console.log(joy)
 
 //Arrow function
