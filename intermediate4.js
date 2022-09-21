@@ -20,13 +20,13 @@
 //  That means it will have access to the methods and porperties which is attached to the 
 //  prototype of this object constructor. Refer below:
 
-    Object
+    // Object
 //    V
-    Prototype
-    hasOwnProperty()
-    isPrototypeOf()
-    constructor()
-    toString()
+    // Prototype
+    // hasOwnProperty()
+    // isPrototypeOf()
+    // constructor()
+    // toString()
 
 //  & this is the prototype chain for objects created using object literals ({name:value} pairs).
 //  Now if I enter riya on the console apart from the created properties, this riya object also
@@ -80,8 +80,20 @@ var ShoppingCart = function(itemName, itemQuantity, itemPrice, discount){
     myCart.__proto__ === ShoppingCart.prototype  //true
     myCart.__proto__.__proto__ === Object.prototype  //true
     myCart.hasOwnProperty('itemName')  //true
+
+    myCart.finalItemDetail() //This call is a blunt call.
+
+//  Suppose we are accessing a function finalItemDetail and maybe in our code itemPrice
+//  is wrongly spelt then of course it will result as undefined and furthermore will take more 
+//  time in finding the property through lookup value. This is a potential issue in above code.
+//  So below, we can make the above mentioned code better.
+
+    if (myCart.hasOwnProperty('itemName')){
+        myCart.finalItemDetail()
+    }
+
     myCart.hasOwnProperty('typeOfItems') //false
-//  Fale because this myCart inheriting this typeOfItems property from ShoppingCart prototype.  
+//  Fale because this myCart is inheriting typeOfItems property from ShoppingCart prototype. 
 
     var beverages = ["black coffee", "greentea", "lemonade", "mojito", "milktea"];
     beverages.push("milkcoffee");

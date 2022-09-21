@@ -52,10 +52,17 @@
 
     function playlist(){
         var song = "Boulevard of Broken Dreams"
-        console.log(song);
+        console.log(song); //Boulevard of Broken Dreams
     }
     playlist();
-    console.log(song);
+    console.log(song);  //ReferenceError: song is not defined
+
+    function playlist(){
+        let song = "Boulevard of Broken Dreams"
+        console.log(song); //Boulevard of Broken Dreams
+    }
+    playlist();
+    console.log(song); //ReferenceError: song is not defined
 
 // When you declare a variable in a function, that variable is only visible
 // within the function.
@@ -65,7 +72,7 @@
 // The global scope is the outermost scope and the variables can be accessed from
 // any inner(Local) scope.
     
-var fruitname = "Litchi"
+let fruitname = "Litchi"
 function fruits(){
  console.log(fruitname + " is a summer fruit.")
 }
@@ -83,3 +90,7 @@ function sendMessage(){
      callMessage();      
 }
 sendMessage()
+
+//  This is an example of lexical scoping, where lexical refers to the fact that lexical scoping uses
+//  the location of the variable declaration within the source code to determine its availability,
+//  thus giving access to variables declared in functions outer scope.
