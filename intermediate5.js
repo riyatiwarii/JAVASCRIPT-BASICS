@@ -106,9 +106,9 @@
 }
 
     let counterr = new Counter();
-    counterr.incrementCounter1();   //1
-    counterr.incrementCounter1();   //2
-    counterr.decrementCounter1();   //1
+    // counterr.incrementCounter1();   //1
+    // counterr.incrementCounter1();   //2
+    // counterr.decrementCounter1();   //1
     
     
 
