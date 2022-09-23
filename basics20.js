@@ -31,4 +31,12 @@
     console.log(frontend, backend); //React, Node
     const { frontend: courseOne, backend: courseTwo } = learn;
     console.log(courseOne, courseTwo);  //React, Node
-    
+    const {languagee = "Javascript", database} = learn;
+    console.log(languagee, database); //Javascript MongoDB
+
+    const user = { 
+        'first_name': 'Riya',
+        'last_name': 'Tiwari'}
+    const { first_name, last_name, full_name=`${first_name} ${last_name}` } = user;
+
+    console.log(full_name); // Output, Riya Tiwari
