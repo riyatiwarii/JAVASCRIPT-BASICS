@@ -1,6 +1,6 @@
 //Increment and Decrement
 
-//  Using prefix operator before operand allows, the operation executes and adds/subtracts 1 
+//  Using prefix operator before operand allows the operation to execute and add/subtract 1 
 //  prior to returning. This allows us to instantly log out and see the resulting value. :)
 
 //  Using suffix operator, the value is returned before the operand is increased/decreased.

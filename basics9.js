@@ -11,7 +11,7 @@
 // Evaluates the operands from left to right
 // For each operand, it will first convert it to a boolean. If the result is false, stops and 
 // returns the original value of that operand.
-// otherwise if all were truthy it will return the last truthy value.
+// Otherwise if all were truth it will return the last truth value.
 
    console.log(0 && 1)  //0
    console.log(1 && 2 && 3)   //3
@@ -32,5 +32,6 @@ console.log(0 || 1)  //1
 console.log(1 || 2 || 3)   //1
 console.log((0 || 1 || 2 || 5))   //1
 console.log(null || true)   //true
-let num2 = 5
-console.log((1 < num2 || 15 == num2))    //true
+
+let number = 15;
+console.log((1 > number || 15 == number))    //true

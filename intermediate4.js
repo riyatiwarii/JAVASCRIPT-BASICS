@@ -67,8 +67,8 @@ var ShoppingCart = function(itemName, itemQuantity, itemPrice, discount){
 //  And since myCart is an instance of this function constructor.
 //  It will have access to the methods and properties present in the Prototype of this
 //  ShoppingCart constructor.
-//  Now this ShoppingCart is also an object and we learnt that every object which is create in
-//  Js is an instance of object object. So, this person is also an instance of Object object and
+//  Now this ShoppingCart is also an object and we learnt that every object which is created in
+//  Js is an instance of object object. So, this is also an instance of Object object and
 //  since this is an instance of an object, it will have access to the methods and properties
 //  present in the Prototype of this Object constructor.
 
@@ -93,7 +93,7 @@ var ShoppingCart = function(itemName, itemQuantity, itemPrice, discount){
     }
 
     myCart.hasOwnProperty('typeOfItems') //false
-//  Fale because this myCart is inheriting typeOfItems property from ShoppingCart prototype. 
+//  False because this myCart is inheriting typeOfItems property from ShoppingCart prototype. 
 
     var beverages = ["black coffee", "greentea", "lemonade", "mojito", "milktea"];
     beverages.push("milkcoffee");
@@ -104,5 +104,5 @@ var ShoppingCart = function(itemName, itemQuantity, itemPrice, discount){
 //  beverages is an instance of an array constructor and it will have all the access to the 
 //  methods and properties present inside the prototype of this array constructor.
 //  we have already used many methods like push, pop, shift, unshift, slice and many such.
-//  pushhh is not method inside the prototype of array onstructor and therefore, 
+//  pushhh is not method inside the prototype of this array onstructor and therefore, 
 //  this beverages instance is not able to inherit this method from the prototype of constructor.

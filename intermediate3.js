@@ -19,5 +19,7 @@
     ShoppingCart()
     myCart = new ShoppingCart("Maggie", 2, 24, 1)
     console.log(myCart)
+
+    
     myCart.afterDiscount()
     myCart.finalItemDetail()

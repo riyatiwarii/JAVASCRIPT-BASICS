@@ -16,7 +16,7 @@ var studentMarks = studentRecords.filter(stu => stu.marks > 50 && stu.id > 120).
 console.log(studentMarks)
 
 //Array.reduce
-var totalMarks = studentRecords.reduce( (acc,curr) => acc+curr.marks, 0)
+var totalMarks = studentRecords.reduce((acc,curr) => acc + curr.marks, 0)
 console.log(totalMarks);
 
 //Filter and Reduce function together

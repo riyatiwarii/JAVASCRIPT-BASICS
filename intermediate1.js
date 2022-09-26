@@ -3,7 +3,7 @@
 //  To be more specific, it’s meant to help you target the current object.
 //  For all regular function calls, THIS points to window object.
 
-//  What happens if you reference this in the global context (i.e., not inside any function)?
+//  What happens if you refer this in the global context (i.e., not inside any function)?
     console.log(this)
 //  This code execution gets me to the global object which is window object in this case.
 

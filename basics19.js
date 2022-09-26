@@ -9,14 +9,14 @@ fruits.set("litchis", 450);
 
 fruits.set("apples", 200);
 fruits.get("apples"); //200
-fruits.size; //3
+fruits.size; //4
 fruits.delete("apples");
 fruits.delete("apples");
 fruits.has("apples"); //false
 
 //                       Object	                              Map
 // Iterable	        Not directly iterable	               Directly iterable
-// Size	            Do not have a size property	           Have a size property
+// Size	            Do not have a size property	         Have a size property
 // Key Types	    Keys must be Strings (or Symbols)	   Keys can be any datatype
 // Key Order	    Keys are not well ordered	           Keys are ordered by insertion
 // Defaults	        Have default keys	                   Do not have default keys

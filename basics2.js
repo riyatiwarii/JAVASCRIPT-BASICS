@@ -78,9 +78,9 @@ function fruits(){
 }
 fruits()
 
-// Lexical Scope
-// When a function is defined inside another function, the inner function can access
-// the variables of the outer function. This operation is called Lexical scoping.
+//  Lexical Scope
+//  When a function is defined inside another function, the inner function can access
+//  the variables of the outer function. This operation is called Lexical scoping.
 
 function sendMessage(){
      var msg = "Hello World";
