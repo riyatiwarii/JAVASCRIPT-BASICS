@@ -57,3 +57,41 @@
     myCar.setModel('A2');
     console.log(myCar.getColor())
     console.log(myCar.getMake())
+
+//  Using private variable.
+
+//  Here's a JavaScript class with private fields, note that unlike "public" members every private field must
+//  be declared before access.
+//  In order to achieve the privacy of class level fields one has to use # notation before the fields
+
+    class Decide {
+        #value;
+        constructor() {
+            this.#value = 100;
+        }
+        getdecision (price) {
+            if (this.#value < price){
+                console.log("Discount")
+            }
+            else {
+                console.log("No Discount")
+            }
+        }
+    }
+    const num = new Decide();
+    num.getdecision(20)
+
+    class Circle {
+        // private field
+        #radius;
+        constructor(value) {
+        // You can access private field from constructor
+        this.#radius = value;
+        }
+        get area() {
+        return Math.PI * Math.pow(this.#radius, 2);
+        }
+    }
+
+    const circle = new Circle(10);
+    console.log(circle.area); // 314.1592653589793
